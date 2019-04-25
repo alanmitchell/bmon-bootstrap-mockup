@@ -23,34 +23,36 @@
             </div>
         </div>
         <div class="container mt-0 pt-3" id="wrap">
-            <div class="row flex justify-content-between">
-                <div class="form-group">
+            <div class="row flex justify-content-between px-0 mx-1 mb-0">
+                <form class="form-inline"
                     <label for="select_org" id="label_org"">Organization:</label>
-                    <select class="form-control" id="select_org" name="select_org">
+                    <select class="form-control ml-2" id="select_org" name="select_org">
                         <option value="0"  selected>All Organizations</option>
                         <option value="1" >Homes</option>
                         <option value="2" >THRHA</option>
                         <option value="3" >Other Commercial</option>
                     </select>
-                </div>
+                </form>
                 <div>
                     <nav class="navbar navbar-expand-sm navbar-light">
                         <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav2">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse nav-pills" id="myNav2">
-                            <ul  class="navbar-nav" id="nav_links">
-                                <li class="nav-item"><a href="/map/" class="nav-link" id="link_map">Map</a></li>
-                                <li class="nav-item"><a href="/reports/" class="nav-link" id="link_reports">Graphs/Reports</a></li>
-                                <li class="nav-item"><a href="/custom-reports/" class="nav-link" id="link_custom-reports">Custom Reports</a></li>
-                                <li class="nav-item"><a href="/training-anthc/" class="nav-link" id="link_training-anthc">Training</a></li>
-                                <li class="nav-item"><a href="/admin-reports/" class="nav-link" id="link_admin-reports">Sys Admin</a></li>
+                        <div class="collapse navbar-collapse" id="myNav2">
+                            <ul  class="navbar-nav nav-pills" id="nav_links">
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_map">Map</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link active" id="link_reports">Graphs/Reports</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_custom-reports">Custom Reports</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_training-anthc">Training</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_admin-reports">Sys Admin</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
-                
+
+            <hr class="my-2">
+                    
             <form class="form-inline" id="nav">
                 <div class="form-group col-auto">
                 </div>
@@ -59,7 +61,6 @@
             <div id="content">
                 <h2>Charts and Reports</h2>
  
-                <hr class="mt-1">
                 <form>
                     <div class="form-row align-items-end">
                         <div class="form-group col-auto">
@@ -130,11 +131,18 @@
                 <option value="8760">1 year</option>
             </select>
         </div>
+        <div class="form-check mb-4 ml-3">
+            <input class="form-check-input" type="checkbox" value="" id="show_occupied" name="show_occupied">
+            <label class="form-check-label" for="show_occupied">
+                Show Occupied Periods
+            </label>
+        </div>
+        <!--
         <div class="btn-group-toggle col-auto mb-3" data-toggle="buttons">
             <label class="btn btn-info active">
                 <input type="checkbox" id="show_occupied" name="show_occupied" autocomplete="off"> Show Occupied Periods
             </label>
-        </div>
+        </div> -->
     </div>
 </form>
 
