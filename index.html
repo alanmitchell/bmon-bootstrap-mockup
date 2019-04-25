@@ -130,9 +130,10 @@
                 <option value="8760">1 year</option>
             </select>
         </div>
-        <div class="form-group col-auto" id="ctrl_occupied">
-            <input type="checkbox" id="show_occupied" name="show_occupied"/>
-                <label for="show_occupied" class="btn btn-primary">Shade Occupied Periods</label>
+        <div class="btn-group-toggle col-auto mb-3" data-toggle="buttons">
+            <label class="btn btn-info active">
+                <input type="checkbox" id="show_occupied" name="show_occupied" autocomplete="off"> Show Occupied Periods
+            </label>
         </div>
     </div>
 </form>
@@ -189,14 +190,15 @@
 
                 <p style="clear: both">&nbsp;</p>
                 <hr />
+
                 <div id="footer">
                     <div class="row">
-                        <div class="col-2">
-                            <img src="ahfc_logo.png" width="75" height="58" border="0" alt="AHFC Logo" style="vertical-align:middle">
+                        <div class="col-auto">
+                            <img class="ml-3" src="ahfc_logo.png" width="75" height="58" border="0" alt="AHFC Logo" style="vertical-align:middle">
                         </div>
-                        <div class="col-10">
-                            Thanks to the Alaska Housing Finance Corporation for providing most
-                            of the source code for this website.
+                        <div class="col">
+                            <p>Thanks to the Alaska Housing Finance Corporation for providing most
+                            of the source code for this website.</p>
                         </div>
                     </div>    
                 </div>
