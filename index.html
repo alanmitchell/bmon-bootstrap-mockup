@@ -232,7 +232,11 @@
             var layout = {
                 title: 'Sensor XYZ from Building B',
                 font: {size: 18},
-                height: 550
+                height: 550,
+                margin: {
+                    l: 60,
+                    r: 60
+                }
             };
 
             Plotly.newPlot('results', data, layout, {responsive: true});
