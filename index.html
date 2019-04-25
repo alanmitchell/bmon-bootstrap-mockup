@@ -23,38 +23,40 @@
             </h1>
         </div>
     </div>
-    <div class="container mt-0 pt-3" id="wrap">
-        <div class="row flex justify-content-between px-0 mx-1 mb-0">
-            <form class="form-inline">
-                <label class="mr-2" for="select_org" id="label_org"">Organization:</label>
-                <select class=" form-control" id="select_org" name="select_org">
-                    <option value="0" selected>All Organizations</option>
-                    <option value="1">Homes</option>
-                    <option value="2">THRHA</option>
-                    <option value="3">Other Commercial</option>
-                </select>
-            </form>
-            <div>
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav2">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="myNav2">
-                        <ul class="navbar-nav nav-pills" id="nav_links">
-                            <li class="nav-item"><a href="#" class="nav-link" id="link_map">Map</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link active"
-                                    id="link_reports">Graphs/Reports</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" id="link_custom-reports">Custom
-                                    Reports</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" id="link_training-anthc">Training</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" id="link_admin-reports">Sys Admin</a></li>
-                        </ul>
-                    </div>
-                </nav>
+    <div class="container-fluid" style="background:rgb(150, 204, 248)">
+        <div class="container">
+            <div class="row flex justify-content-between px-0 mx-1 mb-0">
+                <form class="form-inline">
+                    <label class="mr-2" for="select_org" id="label_org"">Organization:</label>
+                    <select class=" form-control" id="select_org" name="select_org">
+                        <option value="0" selected>All Organizations</option>
+                        <option value="1">Homes</option>
+                        <option value="2">THRHA</option>
+                        <option value="3">Other Commercial</option>
+                    </select>
+                </form>
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNav2">
+                            <ul class="navbar-nav nav-pills" id="nav_links">
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_map">Map</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link active"
+                                        id="link_reports">Graphs/Reports</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_custom-reports">Custom
+                                        Reports</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_training-anthc">Training</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="link_admin-reports">Sys Admin</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-
-        <hr class="my-2">
+    </div>
+    <div class="container mt-0 pt-3" id="wrap">
 
         <form class="form-inline" id="nav">
             <div class="form-group col-auto">
@@ -173,7 +175,7 @@
                         <input class="form-check-input" type="checkbox" value="" id="show_occupied"
                             name="show_occupied">
                         <label class="form-check-label" for="show_occupied">
-                            Show Occupied Periods
+                            Shade Occupied Periods
                         </label>
                     </div>
                     <!--
