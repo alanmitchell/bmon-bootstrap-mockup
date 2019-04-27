@@ -47,7 +47,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="myNav2">
-                            <ul class="navbar-nav nav-pills" id="nav_links">
+                            <ul class="navbar-nav " id="nav_links">
                                 <li class="nav-item"><a href="#" class="nav-link" id="link_map">Map</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link active"
                                         id="link_reports">Graphs/Reports</a></li>
@@ -435,6 +435,7 @@
     <script>
         /* Needed to tell selectpicker what version of Bootstrap is being used. */
         $.fn.selectpicker.Constructor.BootstrapVersion = '4';
+        /* Tell select picker to use Mobile select interface, if mobile. */
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $('.selectpicker').selectpicker('mobile');
         }
@@ -445,13 +446,6 @@
         $('#end_date').datepicker({
             uiLibrary: 'bootstrap4'
         });
-        /*
-        $('#select_sensor').multiselect({
-            enableClickableOptGroups: true,
-            enableCollapsibleOptGroups: true,
-            buttonWidth: '400px'
-        });*/
-
 
         var trace1 = {
             type: 'scatter',
